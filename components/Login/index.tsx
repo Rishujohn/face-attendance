@@ -38,7 +38,7 @@ export default function Login() {
       <div className="fixed top-0 left-0 h-screen w-screen flex justify-center items-center">
         <div className="bg-white h-[80vh] w-[80vw] flex justify-between shadow-md rounded-lg">
           <div className="w-1/2 h-fit">
-            <h1 className="text-2xl font-body text-center font-bold pt-4">
+            <h1 className="text-2xl text-center font-bold pt-4">
               LOGIN
             </h1>
             <p className="text-[12px] text-gray-400 font-light text-center">
