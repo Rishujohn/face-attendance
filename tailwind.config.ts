@@ -15,9 +15,6 @@ const config: Config = {
         xl: "1280px",
       },
     },
-    fontFamily: {
-      body: ["Poppins", "san-serif", "system-ui"],
-    },
   },
   plugins: [],
 };

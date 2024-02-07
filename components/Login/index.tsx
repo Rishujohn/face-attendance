@@ -38,7 +38,9 @@ export default function Login() {
       <div className="fixed top-0 left-0 h-screen w-screen flex justify-center items-center">
         <div className="bg-white h-[80vh] w-[80vw] flex justify-between shadow-md rounded-lg">
           <div className="w-1/2 h-fit">
-            <h1 className="text-2xl font-body text-center font-bold pt-4">LOGIN</h1>
+            <h1 className="text-2xl font-body text-center font-bold pt-4">
+              LOGIN
+            </h1>
             <p className="text-[12px] text-gray-400 font-light text-center">
               Enter the information that you registered
             </p>
@@ -46,9 +48,10 @@ export default function Login() {
             {/* Crendentials */}
             <form className="px-20 mt-12 text-lg">
               <div>
-                <label htmlFor="">Email: </label> <br />
+                <label htmlFor="email">Email: </label> <br />
                 <input
                   type="email"
+                  id="email"
                   placeholder="enter your email *"
                   required
                   className="border border-grey-400 rounded-md placeholder:text-[10px] px-2 h-10 w-80"
@@ -56,9 +59,10 @@ export default function Login() {
               </div>
 
               <div className="mt-4">
-                <label htmlFor="">Password: </label> <br />
+                <label htmlFor="password">Password: </label> <br />
                 <input
                   type="password"
+                  id="password"
                   placeholder="enter your password *"
                   required
                   className="border border-grey-400 rounded-md placeholder:text-[10px] px-2 h-10 w-80"
@@ -67,7 +71,7 @@ export default function Login() {
 
               <div className="flex justify-between items-center text-[12px] mt-6">
                 <div className="flex items-center justify-center gap-2">
-                  <input type="checkbox" name="rememberMe" id="" />
+                  <input type="checkbox" name="rememberMe" id="rememberMe" />
                   <label htmlFor="rememberMe">remember me</label>
                 </div>
 
@@ -117,7 +121,9 @@ export default function Login() {
               width={1000}
             />
 
-            <div className="text-xl whitespace-nowrap">Face recogonition attendance system</div>
+            <div className="text-xl whitespace-nowrap">
+              Face recogonition attendance system
+            </div>
           </div>
         </div>
       </div>
