@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Login() {
   return (
@@ -38,9 +39,7 @@ export default function Login() {
       <div className="fixed top-0 left-0 h-screen w-screen flex justify-center items-center">
         <div className="bg-white h-[80vh] w-[80vw] flex justify-between shadow-md rounded-lg">
           <div className="w-1/2 h-fit">
-            <h1 className="text-2xl text-center font-bold pt-4">
-              LOGIN
-            </h1>
+            <h1 className="text-2xl text-center font-bold pt-4">LOGIN</h1>
             <p className="text-[12px] text-gray-400 font-light text-center">
               Enter the information that you registered
             </p>
@@ -80,9 +79,15 @@ export default function Login() {
                 </div>
               </div>
 
-              <button className=" bg-fuchsia-950 mt-8 p-2 w-full rounded-md text-white tracking-wider font-bold">
+              <motion.button
+                initial={{ scale: 1 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 1.1 }}
+                transition={{ ease: "easeInOut", duration: 0.3, delay: 0.1 }}
+                className=" bg-fuchsia-950 mt-8 p-2 w-full rounded-md text-white tracking-wider font-bold"
+              >
                 Login
-              </button>
+              </motion.button>
 
               <div className="h-[1px] w-full bg-black bg-opacity-5 mt-4"></div>
 
